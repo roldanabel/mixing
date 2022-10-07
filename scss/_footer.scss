@@ -1,0 +1,13 @@
+$bg1: #F8F9FA;
+
+@mixin caja($fondo){
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: $fondo;
+}
+.footer{
+    @include caja ($bg1)
+}
